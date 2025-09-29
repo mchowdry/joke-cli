@@ -4,7 +4,7 @@ A Python command line application that generates entertaining jokes using Amazon
 
 ## ✨ Features
 
-- **AI-Powered Jokes**: Generate fresh, unique jokes using AWS Bedrock's Claude Sonnet 4 model
+- **AI-Powered Jokes**: Generate fresh, unique jokes using AWS Bedrock's Claude models
 - **Multiple Categories**: Choose from 5 different joke categories:
   - `general` - Universal humor for everyone
   - `programming` - Tech and coding jokes for developers
@@ -14,7 +14,7 @@ A Python command line application that generates entertaining jokes using Amazon
 - **Interactive Feedback System**: Rate jokes (1-5 stars) and add optional comments
 - **Statistics Dashboard**: View detailed feedback analytics and trends
 - **AWS Integration**: Seamless integration with AWS Bedrock and credential management
-- **Modern API Support**: Uses both legacy invoke_model and modern Converse APIs
+- **Modern API Support**: Automatically uses the appropriate API (legacy invoke_model or modern Converse) based on the model
 - **Comprehensive Error Handling**: User-friendly error messages with actionable guidance
 
 ## 🚀 Installation
@@ -23,8 +23,8 @@ A Python command line application that generates entertaining jokes using Amazon
 
 ```bash
 # Clone the repository
-git clone <repository-url>
-cd joke-of-the-day
+git clone https://github.com/mchowdry/joke-cli.git
+cd joke-cli
 
 # Install in development mode
 pip install -e .
